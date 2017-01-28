@@ -1,0 +1,274 @@
+/* Contact Form */
+fieldset {
+    	border:none;
+    	padding:1em .75em .25em;
+    	background:rgba(102,51,0,.35);
+		border-radius:1.5em; 
+}
+legend {
+    display:block;
+    padding:2em .5em .2em;
+    font-weight:300;
+    font-size:1.25em;
+    color:#210;
+    border-bottom:solid 1px #ffc;
+    text-align: center;
+    width:100%;
+}
+form#specificShipInfo {
+	    background:rgba(102,51,0,.35);
+		border-radius:1.5em; 
+}
+.leftAside legend {
+	margin-bottom:-1em;
+	font:bold .75em 'Fondamento', 'Courier New', monospace;
+}
+.leftAside fieldset {
+	padding:2em .75em .25em;
+	background:none;
+	
+}
+input {
+	width:60%;
+}
+input, textarea {
+    padding:5px;
+    margin:0;
+    font-family:Merriweather, 'Times New Roman', serif;
+    border:solid #210 1px;
+}
+input[type=checkbox], input[type=radio]{
+    width:auto;
+    
+}
+select {
+	background-color:#fc9;
+	width: 12em;
+}
+.altLabel label {
+    text-align: left;
+    width:auto;
+}
+
+#contactForm ol {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+#contactForm li {
+    padding-bottom: .75em;
+}
+#comments .radioSet li {
+    display:inline-block;
+    margin-right:10px;
+    text-align: center;
+}
+.groupHeadline {
+    margin-bottom:.5em;
+}
+textarea {
+    width:95%;
+    color:#630;
+    text-align: center;
+    min-height: 5em;
+    margin-top:-2em;
+}
+label {
+    width:30%;
+    text-align: right;
+    display:inline-block; 
+    
+}
+button[type=submit] {
+	padding:0;
+    margin:1em auto 0;
+    display: block;
+    background-color: #630;
+    color:#ffc;
+    border:solid 1px #ffc;
+    border-radius:.5em;
+}
+button[type=submit]:hover {
+    background-color:#210;
+}
+/* ----- End Contact Form */
+/*Search Wrecks Form */
+.searchData1 fieldset {
+	background-color: inherit;
+	border-radius: 1em;
+}
+
+.searchData1 input, .searchData1 #yeard {
+	display:block;
+	margin:0;
+	padding:0;
+	background-color:#fc9 !important;
+	font:bold .85em 'Merriweather', 'Times New Roman', serif;
+	color: #210;
+	width:95%;
+	border:solid 1px #210;
+}
+.searchData1 legend {
+	margin:0;
+	padding:.25em .5em;	
+	border:none;
+	border-radius: .5em;
+}
+.searchData1 input[type='checkbox'] {
+	display:inline;
+	margin:0;
+	padding:0;
+	width:1em;
+	
+}
+.browseSearch div.formRight {
+	margin-top:1.5em;
+}
+.formLeft ul {
+	width:100%;
+	margin:0;
+	padding:0;
+
+}
+.formLeft li {
+	font:bold .85em "Merriweather", "Times New Roman", serif;
+	display:inline-block;
+	width:35%;
+	height:auto;
+	margin:0;
+	vertical-align: middle;
+	padding:0;
+	background-color:inherit;
+}
+.formLeft label {
+	margin:0;
+	padding:0;
+}
+.formLeft button {
+	display:inline-block;
+	text-align: center;
+	margin: .5em 1em 0;
+	padding:.25em;
+	
+}
+.searchData1 label {
+	display:block;
+	text-align: left;
+	font:bold 1em 'Merriweather', 'Times New Roman', serif;
+	margin:1em 0 0;
+	color:#210;
+}
+.formLeft, .formRight {
+	display:block;
+	margin:0 auto;
+	width:94%;
+}
+.formRight li {
+	font:bold .85em "Merriweather", "Times New Roman", serif;
+	display:inline-block;
+	width:35%;
+	height:auto;
+	margin:0;
+	vertical-align: middle;
+	padding:0;
+	background-color:inherit;
+}
+/* ----- End Search Wrecks Form ----- */
+
+/*Specific Ship Form */
+#specificShipInfo form {
+	min-width:200px;
+	max-width:300px;
+	margin:auto;
+}
+#specificShipInfo fieldset {
+    margin:1em 0;
+}
+#specificShipInfo legend {
+	padding:0 5px;
+	font-size:1.5em;
+    font-weight:700;
+}
+#specificShipInfo label {
+	font-family:Merriweather, 'Times New Roman', serif;
+    font-size:1.2em;
+    text-align: left;
+    vertical-align: top;
+}
+#specificShipInfo input {
+	font-family:Merriweather, 'Times New Roman', serif;
+	text-align:center;
+}
+#specificShipInfo input#county {
+    max-width:130px;
+}
+#specificShipInfo input#depth {
+    width:40px;
+}
+#specificShipInfo input#experience {
+    width:50px;
+}
+/* ----- End Specific Ship Form ----- */
+@media screen and (min-width:600px) {
+	/* Forms */
+	#contactForm2 li {
+        display:inline-block;
+    }
+    label {
+        width:auto;
+        text-align: left;
+    }
+    #comments li {
+        display: block;
+        width:auto;
+    }
+    #comments textarea {
+        margin-top:-1em;
+    }
+    input#tel {
+    	width:45%;
+    }
+    input#url {
+    	font-size:.85em;
+    }
+    
+    /* ----- End Forms ----- */
+    
+/*Specific Ship Form */
+form#specificShipInfo {
+		min-width:200px;
+		margin:auto;
+	}
+/* -----End Specific Ship Form ----- */	
+
+/*--  Irish Wrecks Browse Form --*/
+.browseSearch ul:first-child {
+	padding:0;
+	margin:0;
+}
+.browseSearch li {
+	margin:1em 0 0 ;
+}
+.primaryBrowse {
+	margin:0;
+	padding:0;
+}
+	
+} /* ----- End (min-width:600px) media query ----- */
+@media screen and (min-width:801px) {
+	/*Search Wrecks Form*/
+	.formLeft {
+	float:left;
+	margin:0 .25em 0.5em;
+	width: 48%;
+}
+
+	.formRight {
+	float:right;
+	margin:0 .5em 0 .25em;
+	width: 48%;
+}
+	/* ----- End Search Wrecks Form ----- */
+
+
+}

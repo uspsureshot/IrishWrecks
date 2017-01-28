@@ -1,0 +1,1167 @@
+/*Irish Wrecks Primary CS
+Team 8:
+Gregor Hinckley
+Mehran Nejad
+Traceuy Olson 
+*/
+
+/* Fonts */
+/* Title/Heading Font font-family: 'Fondamento', 'Courier New', monospace;
+Paragraph Font font-family: 'Merriweather','Times New Roman', serif;*/
+
+@import url('https://fonts.googleapis.com/css?family=Fondamento|Merriweather:400,900,900i&subset=latin-ext');
+
+/*General Global Properties */
+
+header, article, aside, main, footer, video, audio, section, nav, ul, li, p, a {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font: normal 8px 'Merriweather', 'Times New Roman', serif;
+	font-size: 100%;
+}
+
+html {
+	padding: 0;
+	margin: 0;
+	background-color: #fc9;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	background-color: #fc9;
+	font-size: 12px;
+}
+
+a,
+a:link {
+	font: italic bold 1em 'Fondamento', 'Courier New', monospace;
+	color: #210;
+	text-shadow: 0 0 1em #fff;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #210;
+}
+ a.btn:visited, a.btn:link,  a.btn  {
+	color:#fff;
+}
+a:hover {
+	color: #210;
+}
+
+p {
+	padding: 0 0 .5em 3em;
+	font: normal 1em/1.2 'Merriweather', 'Times New Roman', serif;
+	color: #210;
+}
+
+.fullWidth {
+	width: 100%;
+	clear: both;
+	height: 1px;
+}
+
+h1 {
+	font: bold 2em 'Fondamento', 'Courier New', monospace;
+	color: #210;
+	display: block;
+	margin-top:.5em;
+	text-align: center
+}
+
+h2 {
+	font: bold 1.5em 'Fondamento', 'Courier New', monospace;
+	color: #210;
+	display: block;
+	margin: .5em 0 0 .5em;
+	text-align: left;
+}
+
+h3 {
+	padding:0 1em;
+	font: bold 1.2em 'Fondamento', 'Courier New', monospace;
+	color: #210;
+}
+
+h4 {
+	font: bold 1em 'Fondamento', 'Courier New', monospace;
+	color: #210;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	border: none;
+	border-radius: 1.5em;
+}
+.groupRight{
+	width:94%;
+	float:none;
+	margin:0;
+}
+.groupLeft {
+	display:block;
+	width:94%;
+	margin:0;
+	float:none;
+}
+
+.mainLeft img {
+    margin: 0 auto;
+    border-radius: 0; 
+    /* box-shadow: 3px 3px 10px #210; */
+}
+
+.centerText {
+	text-align: center;
+}
+
+.indentText {
+    text-indent: 3%;
+	text-align: justify;
+}
+
+.leftText {
+	text-align: left;
+}
+
+.container {
+	margin-top: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	background-color: #fc9;
+}
+
+footer {
+	clear: both;
+}
+
+
+/* Header and top menu */
+
+
+/*Navigation */
+
+nav a,
+nav a:link {
+	font: normal 1em 'Fondamento', 'Courier New', monospace;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: #fc9;
+	background-color: #630;
+}
+
+nav a:hover {
+	color: #210;
+	background-color: #ffcc99;
+}
+
+.currentPage {
+	border: solid 2px #fc9;
+	border-radius: 1em;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	background-color: #630;
+	z-index: +1;
+}
+
+nav ul {
+	display: block;
+	width: 94%;
+	color: #fc9;
+	list-style-type: none;
+	background-color: inherit;
+	text-align: left;
+}
+
+nav #navImgSize {
+	margin: 6px 6px 0;
+	width: 20px;
+}
+
+nav #navImg:before {
+	content: url(../imgs/menuIconFC9Small.svg);
+}
+
+nav li {
+	display: none;
+	padding: 5px 1em;
+	position: relative;
+	width: 50%;
+}
+
+nav ul li ul {
+	display: none;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 100%;
+}
+
+nav ul:hover li {
+	display: block;
+}
+
+nav li:hover > ul {
+	display: block;
+}
+
+
+/*End Navigation Properties */
+
+
+/*header banner/Logo*/
+header {
+	display: block;
+	float: none;
+	width: 98%;
+	height: auto;
+	position: relative;
+	padding: 0;
+	margin: 2em auto 1em;
+	background: url(../imgs/BannerScroll310x60.png) left no-repeat;
+	background-size: cover;
+	z-index: 0;
+}
+
+#logoHome { /*Logo in upper right hand corner*/
+	display: block;
+	float: left;
+	width: 35%;
+	height: auto;
+	margin: 3% 0 0 3%;
+	padding: 0;
+}
+
+.titleBanner {
+	display:block;
+	float:right;
+	margin-top:7%;
+	padding:0;	
+	width: 60%;
+	height: auto;
+	
+}
+
+header h1 {
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+header h3 {
+	font: bold 1.25em 'Fondamento', 'Courier New', monospace;
+	color: #210;
+	margin: 0;
+	padding: 0;
+}
+
+h3#tag1 {/*upper h3 tag in .titleBanner*/
+	padding:0;
+	font-style: italic;
+}
+
+#tag2 {/*Lower h3 tag in .titleBanner*/
+	text-align: left;
+	font-style: italic;
+}
+
+
+/*End Header */
+
+
+/*leftAside Left (2 column) Section */
+
+.leftAside aside {
+	float: none;
+	/*padding:.25em;*/
+	margin: 1em auto 0;;
+	width: 94%;
+	height: auto;
+	text-align: center;
+	background-color:#c96;
+    background-color: rgba(192, 144, 96, .50);
+    /*border: hidden .5px #630;*/
+	border-radius: 1.5em;
+	box-shadow: 1px 1px 10px #210;
+   
+}	
+	
+
+.leftAside h1 {
+	font-size: 2em;
+	letter-spacing: .03em;
+	margin: .4em .1em .2em;
+	border-top: solid 1px #630;
+	border-bottom: solid 1px #630;
+}
+#specificShipInfo h1 {
+	color: #ffc;
+	background-color: #630;
+	border-radius: 15px;
+}
+.leftAside h2 {
+	font-size: 1.1em;
+	margin: .3em 0 .2em;
+}
+
+.leftAside h3 {
+	color: #fc9;
+	font-size: 1em;
+	padding: .3em;
+	margin: 0em;
+	background-color: #630;
+	border-radius: .5em;
+}
+
+.leftAside #asideFooter {
+	color: #fc9;
+	font-size: 1em;
+	padding: .3em;
+	margin: 0em -.5em;
+	background-color: #630;
+	border-radius: 1.5em;
+}
+
+#specificShipInfo h4 {
+	margin-bottom: 0;
+}
+
+.leftAside h5 {
+	font-size: .8em;
+	padding: 0 .1em .4em .5em;
+	text-align: left;
+}
+
+.leftAside ul {
+	padding: .2em 0;
+	font-size: .9em;
+	text-align: left;
+}
+
+.leftAside ol:first-child {
+	margin: 0;
+	color: #fc9;
+	background-color: #630;
+	margin: 0 -.5em;
+	padding: 1em .5em 0;
+	border: solid 2px #630;
+	border-radius: 1.5em;
+}
+
+.leftAside ol:last-child {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.leftAside li {
+	display: block;
+	padding: .2em 0;
+	font-size: .9em;
+	position: relative;
+	margin-bottom: .5em;
+	padding: .03em;
+}
+
+.leftAside li ul {
+	display: none;
+	margin: 0;
+}
+
+.leftAside p {
+	font: bold 1em 1.2em 'Merriweather', 'Courier New', serif;
+	text-align: left;
+}
+
+.leftAside li:hover ul {
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	margin: -1em 0 .5em;
+}
+
+.leftAside li:last-child {
+	margin-bottom: 1.5em;
+}
+#specificShipInfo li:last-child {
+	margin-bottom:0;
+}
+
+.leftAside ol {
+	margin-top: 1em;
+	padding: 0;
+}
+
+.leftAside ol li {
+	margin: 0;
+	padding: 0;
+}
+
+.leftAside ol ol {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.leftAside p {
+	padding: 0 0 .5em 3em;
+	color: #210;
+	font-size: 1em;
+	font-family: Merriweather, 'Times New Roman', serif;
+}
+
+
+/* ----- end leftAside Left (2 column) Section ----- */
+
+
+/* mainContent (2 column) Center Section*/
+
+.mainContent article {
+	padding: 0 .4em .5em;
+	margin: .5em auto 0;
+	width: 94%;
+	height: auto;
+	background-color:#c96;
+    background-color: rgba(192, 144, 96, .50);
+    border: hidden .5px #630;
+	border-radius: 1.5em;
+	box-shadow: 1px 1px 10px #210;
+    margin-top: 1em;
+
+}
+
+
+.mainContent ul#carouselMain {
+	display: block;
+	width: 94%;
+	text-align: center;
+}
+#carouselMain img {
+	max-width:500px;
+	height:auto;
+	margin:0 auto;
+}
+
+/* ----- end mainContent Center (2 column) Section ----- */
+
+
+/* mainLeft (1 column) Section */
+
+.mainLeft article {
+	padding: 0 .4em .5em;
+	margin: .5em auto 0;
+	width: 94%;
+	height: auto;
+	background-color:#c96;
+    background-color: rgba(192, 144, 96, .50);
+    border: hidden .5px #630;
+	border-radius: 1.5em;
+	box-shadow: 1px 1px 10px #210;
+    margin-top: 1em;
+}
+
+
+/* Code for bibliography table */
+
+#bibliography table {
+	font-family: Merriweather, 'Times New Roman', serif;
+}
+#bibliography td,
+#bibliography th {
+	padding: 6px;
+	border: 1px solid #630;
+	font-size: 1em;
+	text-align: left;
+	vertical-align: top;
+}
+
+#bibliography tr:nth-of-type(odd) {
+	background-color: #C96;
+	background-color: rgba(192, 144, 96, .30);
+}
+
+#bibliography tr:nth-of-type(even) {
+	background-color: #FFC;
+	background-color: rgba(255, 255, 192, .30);
+}
+
+#firstColumn {
+    width: 5vw;
+}
+
+#secondColumn {
+    width: 50vw;
+}
+
+#thirdColumn {
+    width: 15vw;
+}
+
+#fourthColumn {
+    width: 30vw;
+}
+
+.diveForumPage .mainLeft article {
+    max-width: 960px;
+    width: 94%;
+}
+
+.diveForumPage table {
+    table-layout: fixed;
+}
+
+.diveForumPage table img {
+    margin: 0 auto;
+    padding: 0;
+    height: 28px;
+    width: 30px;
+    border-radius: 0;
+}
+
+
+/* ----- End code for bibliography table ----- */
+
+#bibliography h1 {
+	margin-bottom: 0;
+	font-size: 1.3em;
+}
+
+#bibliography h2 {
+	margin: 0;
+	font-size: 1em;
+	text-align: center;
+}
+
+.mainLeft article h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+.mainLeft article h3 {
+	padding: .2em 0 .5em;
+	font-size: 1.6em;
+	color: #ffc;
+	background: #c96;
+}
+
+
+
+#terminology h3 {
+	padding:.7em 1em;
+	margin:.5em .2em;
+	font-size: 1.2em;
+	text-align:center;
+	background-color:#630;
+	border-radius: 25px;
+}
+#terminology h4 {
+	margin:.3em;
+}
+
+ .mainLeft article h5 {
+    font-family: Fondamento, "Courier New", monospace;
+    font-size: 1.375em;
+    color: #EEA;
+    background: transparent;
+    padding: 1em 3% 0 3%;
+    margin: 0;
+    text-shadow: 1px 1px 3px #210;
+}
+
+.mainLeft article h6 {
+    font-family: Fondamento, "Courier New", monospace;
+    font-size: 1.125em;
+    color: #210;
+    padding: 0.875em 3% 0 3%;
+    margin: 0;
+    text-shadow: 1px 1px 6px #EEA;
+}
+
+.mainLeft ul {
+	background: transparent;
+	padding-bottom: 1em;
+}
+
+.mainLeft ul li {
+	padding-left: 2em;
+	font-size: .9em;
+	color: #210;
+}
+.mainLeft article p {
+    padding: 0.25em 3%;
+    text-shadow: 1px 1px 3px #C95;
+    font-size: .875em;
+}
+#terminology p {
+	font-size:.8em;
+}
+
+/* Code for anatomyOShip Images */
+.anatomyImage img {
+	padding: 1em 0;
+	margin:0;
+	
+}
+#img1 {
+	background: url(../imgs/shipTypes/sm-LubricatingOil-DieselTanker.jpg) center no-repeat;
+	background-size:cover;
+	z-index:+1;
+	border-radius:0;
+}
+#img2 {
+	background: url(../imgs/shipTypes/sm-StandardMotorTramp.jpg) center no-repeat;
+	background-size:cover;
+	z-index:+1;
+	border-radius:0;
+}
+#img3 {
+	background: url(../imgs/shipTypes/sm-StandardDanish-MotorTramp.jpg) center no-repeat;
+	background-size:cover;
+	z-index:+1;
+	border-radius:0;
+}
+#img4 {
+	background: url(../imgs/shipTypes/sm-North-SeaSingle-ScrewCoal-Carrier.jpg) center no-repeat;
+	background-size:contain;
+	z-index:+1;
+	border-radius:0;
+}
+#img5 {
+	background: url(../imgs/shipTypes/sm-MediterraneanPassengerShip.jpg) center no-repeat;
+	background-size:contain;
+	z-index:+1;
+	border-radius:0;
+}
+#img6 {
+	background: url(../imgs/shipTypes/sm-BritishSteamCoaster.jpg) center no-repeat;
+	background-size:contain;
+	z-index:+1;
+	border-radius:0;
+}
+/* ----- Code for anatomyOShip Images ----- */
+
+/* ----- end mainLeft (1 column) Section ----- */
+
+
+
+/*Google Search Bar */
+
+
+/*Search Field*/
+
+div.gsc-control-cse {
+	font-family: 'Merriweather', serif;
+	margin: 0 auto;
+	border: none;
+	background-color: transparent;
+}
+
+div.gsc-input-box,
+input.gSearch {
+	background-color: #fc8;
+}
+
+
+/*Google Search Bar */
+
+
+/*Search Field*/
+
+div.gsc-control-cse {
+	font-family: 'Merriweather', serif;
+	margin: 0 auto;
+	border: none;
+	background-color: transparent;
+}
+
+div.gsc-input-box,
+input.gSearch {
+	background-color: #fc8;
+}
+
+
+/*Search Button */
+
+.gSearch input.gsc-search-button,
+.gSearch input.gsc-search-button:hover,
+.gSearch input.gsc-search-button:focus {
+	border-color: #210;
+	background-color: #630!important;
+	background-image: none;
+	-webkit-filter: none;
+	filter: none;
+}
+
+.cse .gsc-search-button input.gsc-search-button-v2,
+input.gsc-search-button-v2 {
+	width: 13px;
+	height: 13px;
+	padding: 6px 27px;
+	min-width: 13px;
+	margin-top: 2px;
+}
+
+.gSearch .cse input.gsc-search-button,
+.gSearch input.gsc-search-button {
+	font-family: inherit;
+	font-size: 11px;
+	font-weight: bold;
+	color: #fc9;
+	border: 1px solid #630;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+input.gsc-search-button {
+	margin-left: 2px;
+}
+
+/*End Search Button*/
+
+.mainLeft figure {
+    margin: 0 10%;
+}
+
+/*Tool Bar */
+
+.toolBar aside {
+	float: none;
+	margin: 0 auto;
+	width: 94%;
+	height: auto;
+	text-align: center;
+	background: url('../imgs/toolbarBackground.jpg') center no-repeat;
+	background-size: cover;
+	background-color: transparent;
+	box-shadow: 1px 1px 10px #210;
+	border-radius: 1.5em;
+}
+
+.toolBar figure {
+	width: 90%;
+	height: auto;
+	margin: .25em auto;
+	-ms-flex-line-pack: center;
+	align-content: center;
+}
+
+.toolBar #interMap img {
+	border-radius: 0;
+	width:100%;
+	box-shadow: 1px 1px 5px #210;
+}
+
+.socialMedia {
+	margin: 0 0;
+	display: block;
+	text-align: center;
+}
+
+.socialMedia img {
+	margin:0;
+	padding:0;
+	width: 45px;
+	height: 45px;
+}
+.socialMedia figure {
+		display:inline-block;
+		width:45px;
+		height:auto;
+	}
+.socialMedia a {
+	display: inline;
+	margin-right: 1px;
+	margin-left: 1px;
+}
+
+#copyRight {
+	font: italic 1em 'Merriweather', 'Times New Roman', serif;
+	text-shadow: 0 0 2em #ffcc99;
+	margin: 0 auto 1em auto;
+	padding: 0;
+	font-weight: bold;
+}
+
+/*Start Media Queries */
+
+
+/****  Small Size *****/
+@media only screen and (max-width:599px) {
+	/* code for bibliography table */
+	#bibliography table,
+	#bibliography thead,
+	#bibliography tbody,
+	#bibliography th,
+	#bibliography tr,
+	#bibliography td {
+		display: block;
+	}
+	#bibliography thead tr {
+		display: none;
+	}
+	#bibliography td {
+		border: none;
+		position: relative;
+		padding-left: 30%;
+	}
+	#bibliography td:before {
+		position: absolute;
+		left: 6px;
+		width: 35%;
+		padding-right: 10px;
+		white-space: nowrap;
+		font-weight: 700;
+	}
+	#bibliography td:nth-of-type(1):before {
+		content: "Title:";
+	}
+	#bibliography td:nth-of-type(2):before {
+		content: "Author:";
+	}
+	#bibliography td:nth-of-type(3):before {
+		content: "ISBN:";
+	}
+	.diveForumPage #bibliography td:nth-of-type(1):before {
+        content: "Forum Status";
+    }
+    .diveForumPage #bibliography td:nth-of-type(2):before {
+        content: "Title \A Thread Starter";
+        white-space: pre;
+    }
+    .diveForumPage #bibliography td:nth-of-type(3):before {
+        content: "Replies \A Views";
+        white-space: pre;
+    }
+    .diveForumPage #bibliography td:nth-of-type(4):before {
+        content: "Last Post \A By";
+        white-space: pre;
+    }
+	/* ----- code for bibliography table ----- */
+
+}/* ----- end media query Small Size ----- */
+
+
+
+/* Start Tablet Size */
+
+@media screen and (min-width:600px) {
+	
+	body {
+		font: normal 12px 'Merriweather', 'Tiems New Roman', serif;
+		font: 100%;
+		font-size: 14px;
+	}
+/*Start Header and Nav styles*/		
+figure#logoHome {
+		max-width: 200px;
+		height: auto;
+	}
+
+
+/*	End Header and Nav*/
+	.mainLeft article {
+		float: none;
+		padding: 0 .4em .5em;
+		margin: .5em auto 0 ;
+		width: 94%;
+	}
+
+.groupRight{
+	width:45%;
+	float:right;
+	margin:0;
+}
+.groupLeft {
+	display:block;
+	width:45%;
+	margin:0;
+	float:left;
+}
+	/* code for bibliography table */
+	#bibliography table {
+		border-collapse: collapse;
+	}
+	#bibliography th {
+		background: #630;
+		color: #fff;
+		font-weight: 700;
+	}
+	#bibliography td,
+	#bibliography th {
+		font-size: 85%;
+	}
+	/* ----- code for bibliography table ----- */
+
+/* Code for anatomyOShip Images */
+.anatomyImage {
+	padding:0;
+	margin:0;
+	
+}
+#img1 {
+	background: url(../imgs/shipTypes/lg-LubricatingOil-DieselTanker.jpg) center no-repeat;
+	background-size:cover;
+}
+#img2 {
+	background: url(../imgs/shipTypes/lg-StandardMotorTramp.jpg) center no-repeat;
+	background-size:cover;
+}
+#img3 {
+	background: url(../imgs/shipTypes/lg-StandardDanish-MotorTramp.jpg) center no-repeat;
+	background-size:cover;
+}
+#img4 {
+	background: url(../imgs/shipTypes/lg-North-SeaSingle-ScrewCoal-Carrier.jpg) center no-repeat;
+	background-size:cover;
+}
+#img5 {
+	background: url(../imgs/shipTypes/lg-MediterraneanPassengerShip.jpg) center no-repeat;
+	background-size:cover;
+}
+#img6 {
+	background: url(../imgs/shipTypes/lg-BritishSteamCoaster.jpg) center no-repeat;
+	background-size:cover;
+}
+
+	
+}/* ----- End min-width:600px  Tablet ----- */
+
+@media screen and (min-width:760px) {
+	
+/*Start Header and Nav styles*/		
+figure#logoHome {
+		margin: 2vh 0 0 10%;
+/*		max-width: 200px;*/
+		height: auto;
+	}
+	.titleBanner {
+		width: 50%;
+		height: auto;
+		margin: 7% 5% 0 0;
+	}
+	header h1 {
+		font: normal 1.5em 'Fondamento', 'Courier New', monospace;
+	}
+	header h3 {
+		font: bold 1em 'Fondamento', 'Courier New', monospace;
+	} /* ----- End Header and Nav ----- */
+
+
+	
+}/* ----- End min-width:760px ----- */
+
+
+/*Desktop Size */
+
+@media screen and (min-width:901px) {
+	/*Global Settings */
+	html {
+		background-color: #210;
+	}
+	body {
+		max-width: 1024px;
+		background-color: none;
+		margin: 0 auto;
+		font: normal 16px 'Merriweather', 'Tiems New Roman', serif;
+		font: 100%;
+		font-size: 16px;
+	}
+	.container {
+		margin: 0;
+		background: url(../imgs/BackgroundMain.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	.space3em {
+		height: 3em;
+		background-color: transparent;
+	}
+	.space1em {
+		height:1em;
+		background:inherit;
+	}
+	.spacePt5em {
+		height:.5em;
+		background:inherit;
+	}
+	/* Header and top menu */
+	/*Navigation */
+	nav {
+		width:100%;
+		max-width: 1024px;
+		padding-bottom:1em;
+	}
+	nav a {
+		padding:0 5px;
+	}
+
+	nav ul {
+		text-align: center;
+		margin:0;
+		padding:1em 0;
+		width:100%;
+		height:auto;
+		color: #630;
+	}
+	#navImgSize {
+		display: none;
+	}
+	nav #navImg:before {
+		content: none;
+	}
+	nav li {
+		display: inline-block;
+		float: left;
+		padding:0;
+		margin:0;
+		position: relative;
+		width:9em;
+
+	}
+nav  #navStart {/*Format the home LI */
+		margin-left:.5em;
+	}
+	
+	#subWrecks li,
+	#subDiveIn li {
+		width: 100%;
+	}
+	nav ul li ul {
+		display: none;
+		position: absolute;
+		background-color: #630;
+		text-align: center;
+		padding: .25em;
+		margin: 0;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+	
+	nav li:hover ul {
+		display: block;
+		position: absolute;
+		top: 100%;
+	}
+	/*End Navigation Properties */
+	/*header banner/Logo*/
+	header {
+		float: left;
+		width: 100%;
+		height: 11em;
+		margin: 1em auto 0;
+		padding: 0 auto 1em;
+		background: url(../imgs/BannerScroll1014x200.png) center no-repeat;
+	}
+	figure#logoHome {
+		margin: 2vh 0 0 10%;
+		width: 200px;
+		height: auto;
+	}
+	.titleBanner {
+		width: 50%;
+		height: auto;
+		margin: 2% 10% 0 0;
+	}
+	header h1 {
+		font: normal 2em 'Fondamento', 'Courier New', monospace;
+	}
+	header h3 {
+		font: bold 1.25em 'Fondamento', 'Courier New', monospace;
+	}
+	h3#tag1 {}
+	h3#tag2 {}
+	/*leftAside Left Section */
+	.leftAside aside {
+		float:left;
+		width: 25%;
+		max-width: 250px;
+		height: auto;
+		margin: 1em .25em 0em .5em;
+	}
+
+	.leftAside h1 {}
+	.leftAside h2 {
+		font-size: 2em;
+		text-align: center;
+		margin: .3em 0 .2em;
+		border-top: solid 1px #630;
+		border-bottom: solid 1px #630;
+	}
+	.leftAside h3 {}
+	.leftAside h5 {
+		font-size: .8em;
+		padding: 0 .1em .4em .5em;
+		text-align: left;
+	}
+	.leftAside p {
+		padding: .5em;
+		color: #210;
+		font-size: 1em;
+		font-family: Merriweather, 'Times New Roman', serif;
+	}
+	/* mainContent Center Section*/
+	.mainContent article {
+		float: left;
+		margin: 1em .25em;
+		width: 55%;                                                                                                                                       max-width: 500px;
+		height: auto;
+	}
+
+	.mainLeft article {
+		float: left;
+		padding: 0 .4em .5em;
+		margin: .5em .5em 0 1.5em;
+		width: 65%;
+		max-width: 740px;
+		height: auto;
+	}
+	#terminology h3 {
+		text-align: left;
+	}
+	/*Tool Bar */
+	.toolBar aside {
+		float: left;
+		margin: 1em .5em;
+		width: 20%;
+		max-width: 225px;
+	}
+	.toolBarWide aside {
+			width:27%;
+			max-width:400px;
+		}
+
+	.toolBar figure {
+		width: 94%;
+	}
+	.socialMedia figure {
+		display:inline-block;
+		width:45px;
+		height:auto;
+	}
+
+	#copyRight {
+		font: italic 1em 'Merriweather', 'Times New Roman', serif;
+		text-shadow: 0 0 2em #ffcc99;
+
+		font-weight: bold;
+	}
+}

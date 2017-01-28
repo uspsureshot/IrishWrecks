@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width, initial-scale=1.0" />
+    <title>Search Wrecks</title>
+    
+    <link type="text/css" rel="stylesheet" href="../css/main.min.css" />
+    <link type="text/css" rel="stylesheet" href="../css/forms.min.css" />
+    <link type="text/css" rel="stylesheet" href="../css/popUp.min.css" />
+    
+ <!--[if lt IE 9]>
+   <script src="../js/html5shiv.js"></script>
+<![endif]-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+	
+	   <script type="text/javascript" src="../js/popUp.js">
+        
+    </script><!-- Java for Modal Window -->
+
+	
+</head>
+<body>
+ <nav>
+<ul class='mainMenu'>
+<div id='navImgSize'>
+<div id='navImg'></div>
+	</div>
+	<li><a href='../index.html' >Home</a></li>
+	<li><a href='wrecksIre.html' >Wrecks of Ireland</a>
+	<ul id='subWrecks'>
+		<li><a href='searchWrecks.html' class='currentPage'>Search Wrecks</a></li>
+		<li><a href='anatomyOShip.html'>Anatomy of a Ship</a></li>
+		</ul><!--End subWrecks--></li>
+	<li><a href='diveIn.html'>Dive in</a>
+		<ul id='subDiveIn'>
+		<li><a href='seaLife.html'>Sea Life</a></li>
+		<li><a href='diveForum.html'>Dive Forum</a></li>
+			</ul><!--End subDiveIn--> </li>
+	<li><a href='topRated.html'>Top Rated Wrecks</a></li>
+	<li><a href='contactUs.html'>Contact us</a></li>
+	<li><a href='bibliography.html'>Bibliography</a></li>
+	<li><a href='terminology.html'>Terminology</a></li>
+</ul> <!--End mainMenu -->
+ </nav>
+ <div class='fullWidth space3em'></div>
+ <div class='container'>
+ <header>
+   <figure id='logoHome'><a href='../index.html'><img src="../imgs/DBLogoClrBase300x204.png" alt='Irish Wrecks Logo'/></a></figure>
+ <div class='titleBanner'>
+ <h3 id='tag1'>How to</h3>
+ 	<h1> Search the Wrecks of Ireland</h1>
+ <h3 id='tag2'>...A diver's tool to find the spot.</h3>
+	</div> <!--Banner Scroll and Titles -->
+
+ </header>
+<div class='fullWidth'></div>
+ 
+ <section class='mainLeft searchData'>
+ <article>
+  <div id="overlay"></div>
+ 	<h2 class='centerText'>Search our Database</h2>
+
+ 	<h5 lass='centerText'>Search our database for over 10,000 wrecks around Ireland.</h5>
+ 	<div class='fullWidth'></div>
+ 	<form class='searchData1'>
+ 	<fieldset classs='<searchData1'>
+ 	<legend>Query Form</legend>
+ 		<div class='formLeft'>
+ 		<label for="sname">Ship Name:</label>
+            	<input type="text" id="sname" name="snaame" placeholder="Name of Ship"/>
+ 		 <label for="county">County:</label>
+            	<input type="text" id="county" name="county" placeholder="County" />
+ 		<label for="area">Area:</label>
+            	<input type="text" id="area" name="area" placeholder="Area" />
+ 		<label for="city">City:</label>
+            	<input type="text" id="city" name="city" placeholder="City" />
+ 		<label for="year">Year:</label>
+      		<input type="number" id="year" name="year" placeholder="Year of Wreck" />
+ 		
+ 		</div> <!--End Form Left -->
+ 		<div class='formRight'>
+ 		<label>Dive Experience:</label>
+ 		<ul id='diveexp'>
+			<li><input type='checkbox' name="DiveExp" value="novice" /> &nbsp;Novice</li>
+			<li><input type='checkbox' name="DiveExp" value="proficient" />&nbsp;Proficient</li>
+			<li><input type='checkbox' name="DiveExp" value="advanced" />&nbsp;Advanced</li>
+			<li><input type='checkbox' name="DiveExp" value="expert" />&nbsp;Expert</li>
+ 		</ul> <!--End #diveexp -->
+ 		
+ 		<label>Dive Depth:</label>
+ 		<ul id='diveDepth'>
+ 			<li><input type='checkbox' name='depthCheck' value='3m' />&nbsp;0-3m</li>
+ 			<li><input type='checkbox' name='depthCheck' value='10m' />&nbsp;3m-10m</li>
+ 			<li><input type='checkbox' name='depthCheck' value='15m' />&nbsp;10m-15m</li>
+			<li><input type='checkbox' name='depthCheck' value='20m' />&nbsp;15m-20m</li>
+			<li><input type='checkbox' name='depthCheck' value='30m' />&nbsp;20m-30m</li>
+			<li><input type='checkbox' name='depthCheck' value='60m' />&nbsp;30m-6m</li>
+			<li><input type='checkbox' name='depthCheck' value='100m' />&nbsp;60m-100m</li>
+			<li><input type='checkbox' name='depthCheck' value='101+m' />&nbsp;100+m</li>
+ 		</ul>
+ 		<div class='spacePt5em'></div>
+ 		<label for='shiptype'>Ship Type:</label>
+            	<input type="text" id="shiptype" name="shipType" placeholder="Type of Ship"/>
+		
+			<button type="submit" ><a href="#" data-modal-id="popUp1" class="btn btn2">Search</a></button>
+
+		</div> <!--End form Right-->
+		</fieldset>
+ 	</form>
+ </article>
+          <aside class="modalBox modalBox2" id="popUp1">
+            <a href="#" class="close">x</a>
+            <h2>Results</h2>
+                <a href='specificShip.html'><h2>S.F.V. City of Bristol</h2></a>
+                <p>Off the coast of the city of Ballintoy, this Fleetwood Steam Trawler sank on October 22nd, 1906.</p>
+            <footer>
+                <a href="#" class="footerClose">Close</a>
+            </footer>
+        </aside>
+ </section>
+<section class='toolBar toolBarWide'>
+ <aside>
+ <div class='gSearch'>
+ 	<script>
+  (function() {
+    var cx = '006166834925621471722:gg7zyb2slno';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<gcse:search></gcse:search>
+ 	<h2 class='centerText'>Interactive Map</h2>
+ 	<figure id='interMap'><img src='../imgs/ToolBarMap.jpg' alt='Interactive Map' /></figure>
+ 	<div class='fullWidth'></div>
+ 	<div class='socialMedia'>
+ 	<figure id='TBFBook'><a href='http://facebook.com'  target="_blank" ><img src='../imgs/ToolBarFBook.png' alt='Got to Facebook'/></a></figure>
+ 	<figure id='InstGram'><a href='http://instagram.com' target="_blank" ><img src='../imgs/ToolBarInstGram.png' alt='Go to InstaGram' /></a></figure>
+ 	<figure id='TBTweet'><a href='http://twitter.com' target="_blank" ><img src='../imgs/ToolBarTwitterLogo.png' alt='Go to Twitter' /></a></figure>
+ 	</div> <!--End Social Media Dive -->
+ 	<div class='fullWidth'></div>
+ 	<p id='copyRight' class='centerText'>&copy;&nbsp;Irish Wrecks Online</p>
+ </div>
+ </aside>
+ </section>
+ <footer>
+ 	
+ </footer>
+ <div class='fullwidth'></div>
+ </div> <!--End Div .container -->
+</body>
+</html>

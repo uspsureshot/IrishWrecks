@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    
+    <link type="text/css" rel="stylesheet" href="../css/main.min.css" />
+    <link type="text/css" rel="stylesheet" href="../css/forms.min.css" />
+    <link type="text/css" rel="stylesheet" href="../css/popUp.min.css" />
+    
+ <!--[if lt IE 9]>
+   <script src="../js/html5shiv.js"></script>
+<![endif]-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="../js/popUp.js">
+        
+    </script>
+
+</head>
+<body>
+ <nav>
+<ul class='mainMenu'>
+<div id='navImgSize'>
+<div id='navImg'></div>
+	</div>
+	<li><a href='../index.html' >Home</a></li>
+	<li><a href='wrecksIre.html' >Wrecks of Ireland</a>
+	<ul id='subWrecks'>
+		<li><a href='searchWrecks.html'>Search Wrecks</a></li>
+		<li><a href='anatomyOShip.html'>Anatomy of a Ship</a></li>
+		</ul><!--End subWrecks--></li>
+	<li><a href='diveIn.html'>Dive in</a>
+		<ul id='subDiveIn'>
+		<li><a href='seaLife.html'>Sea Life</a></li>
+		<li><a href='diveForum.html'>Dive Forum</a></li>
+			</ul><!--End subDiveIn--> </li>
+	<li><a href='topRated.html'>Top Rated Wrecks</a></li>
+	<li><a href='contactUs.html' class='currentPage'>Contact us</a></li>
+	<li><a href='bibliography.html'>Bibliography</a></li>
+	<li><a href='terminology.html'>Terminology</a></li>
+</ul> <!--End mainMenu -->
+ </nav>
+ <div class='fullWidth space3em'></div>
+ <div class='container'>
+ <header>
+   <figure id='logoHome'><a href='../index.html'><img src="../imgs/DBLogoClrBase300x204.png" alt='Irish Wrecks Logo'/></a></figure>
+ <div class='titleBanner'>
+ <h3 id='tag1'>Touch History</h3>
+ 	<h1>Contact Irish Wrecks</h1>
+ <h3 id='tag2'>...A diver's guide to the shipwrecks off the coast of Ireland.</h3>
+	</div> <!--Banner Scroll and Titles -->
+ <div class='fullWidth'></div>
+ </header>
+ <section class='mainLeft'>
+     
+     <article>
+         <div id="overlay"></div>
+     <h2>Feedback</h2>
+        <p>We love to hear from you, do you have questions, comments or anything else? Reach out and let us know how we can help.</p>
+         
+        <form action="" id="contactForm">
+            <fieldset id="getInTouch" title="Get in touch">
+                <legend>Get in touch</legend>
+                <ol>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" title="Please enter you name" placeholder="Last, First" autofocus required /> <span class="require">*</span>
+                    </li>
+                        
+                    <li>  
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" title="Please enter your email address" placeholder="name@url.com" required /> <span class="require">*</span>
+                    </li>
+                </ol>
+            </fieldset>
+            
+            <fieldset id="other" title="Other Information">
+                <legend>Other Information</legend>
+                
+                <ol>
+                    <li>
+                        <label for="url">Website:</label>
+                        <input type="url" id="url" placeholder="http://www.yourwebsite.com" title="web address" />
+                    </li>
+                    <li>
+                        <label for="tel">Telephone:</label>
+                        <input type="tel" id="tel" placeholder="000-000-0000" />
+                    </li>
+                    
+                    <li class="altLabel">
+                        <input type="checkbox" id="subscribe" value="yes" checked />
+                        <label for="subscribe">Subscribe to our newsletter</label>
+                    </li>
+                    
+                    <li class="altLabel">
+                        <label for="reference">How did you find us?</label>
+                        <select id="reference">
+                           <option hidden>Choose</option>
+                            <option value="friend">A friend</option>
+                            <option value="fb">FaceBook</option>
+                            <option value="twitter" >Twitter</option>
+                            <option value="yelp">Yelp</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </li>
+                </ol>
+            </fieldset>
+            
+            <fieldset id="comments" title="Comments">
+                <legend>Comments / Questions</legend>
+                <ol>
+                    <li>
+                       
+                        <div class="groupHeadline">Request Type:</div>
+                        <ol class="altLabel radioSet">
+                            <li><input type="radio" value="question" id="questionItem" name="requestType" />
+                            <label for="questionItem" class="rBtnLabels">Question</label>
+                            </li>
+                            
+                            <li><input type="radio" value="comment" id="commentItem"  name="requestType" />
+                            <label for="commentItem" class="rBtnLabels">Comment</label>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <label for="inquiry"></label>
+                        <textarea id="inquiry">Your comment or question here</textarea>
+                    </li>
+                </ol>
+            </fieldset>
+           
+               <button type="submit" ><a href="#" data-modal-id="popUp1" class="btn">Send</a></button>
+               
+              
+        </form>
+    </article>
+        <aside class="modalBox" id="popUp1">
+            <a href="#" class="close">x</a>
+            <h2>Thank you!</h2>
+                <p> We appreciate all feedback!</p>
+            <footer>
+                <a href="#" class="footerClose">Close</a>
+            </footer>
+        </aside>
+ 
+ </section>
+ 
+  <section class='toolBar toolBarWide'>
+ <aside>
+ <div class='gSearch'>
+ 	<script>
+  (function() {
+    var cx = '006166834925621471722:gg7zyb2slno';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<gcse:search></gcse:search>
+ 	<h2 class='centerText'>Interactive Map</h2>
+ 	<figure id='interMap'><img src='../imgs/ToolBarMap.jpg' alt='Interactive Map' /></figure>
+ 	<div class='fullWidth'></div>
+ 	<div class='socialMedia'>
+ 	<figure id='TBFBook'><a href='http://facebook.com'  target="_blank" ><img src='../imgs/ToolBarFBook.png' alt='Got to Facebook'/></a></figure>
+ 	<figure id='InstGram'><a href='http://instagram.com' target="_blank" ><img src='../imgs/ToolBarInstGram.png' alt='Go to InstaGram' /></a></figure>
+ 	<figure id='TBTweet'><a href='http://twitter.com' target="_blank" ><img src='../imgs/ToolBarTwitterLogo.png' alt='Go to Twitter' /></a></figure>
+ 	</div> <!--End Social Media Dive -->
+ 	<div class='fullWidth'></div>
+ 	<p id='copyRight' class='centerText'>&copy;&nbsp;Irish Wrecks Online</p>
+ </div>
+ </aside>
+ </section>
+ <footer>
+ 	
+ </footer>
+ <div class='fullwidth'></div>
+ </div> <!--End Div .container -->
+</body>
+</html>
